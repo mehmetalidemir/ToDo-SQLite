@@ -14,6 +14,9 @@ class ListPresenter: ViewToPresenterListProtocol {
     func uploadNotes(){
         listInteractor?.uploadNotes()
     }
+    func searchNote(searchWord: String) {
+        listInteractor?.searchNote(searchWord:searchWord)
+    }
 }
 
 extension ListPresenter: InteractorToPresenterListProtocol {

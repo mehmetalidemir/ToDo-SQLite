@@ -12,7 +12,8 @@ protocol PresenterToInteractorDetailProtocol {
 }
 
 protocol ViewToPresenterDetailProtocol {
-    var detailInteractor:PresenterToInteractorDetailProtocol? {get set}
+    var detailInteractor: PresenterToInteractorDetailProtocol? { get set }
+    func update(note_id: Int, note_name: String, note_description: String)
 
 }
 protocol PresenterToRouterDetailProtocol {

@@ -26,6 +26,8 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func updatedButton(_ sender: Any) {
-       
+        if let noteName = noteTextField.text, let noteDescription = noteDescriptionTextField.text , let n = note {
+            detailPresenterObject?.update(note_id: n.note_id!, note_name: noteName, note_description: noteDescription)
+        }
     }
 }

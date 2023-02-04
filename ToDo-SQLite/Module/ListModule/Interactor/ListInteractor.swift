@@ -42,5 +42,35 @@ class ListInteractor: PresenterToInteractorListProtocol {
 
         db?.close()
     }
+    
+    func searchNote(searchWord: String) {
+        var list = [Notes]()
+
+        db?.open()
+
+        do {
+            let rs = try db!.executeQuery("SELECT * FROM notes WHERE note_name like ?", values: ["%\(searchWord)%"])
+
+            while rs.next() {
+                let note_id = Int(rs.string(forColumn: "note_id"))!
+                let note_name = rs.string(forColumn: "note_name")!
+                let note_description = rs.string(forColumn: "note_description")!
+
+                let note = Notes(note_id: note_id, note_name: note_name, note_description: note_description)
+                list.append(note)
+            }
+
+            listPresenter?.sendDataToPresenter(noteList: list)
+        } catch {
+            print(error.localizedDescription)
+        }
+
+        db?.close()
+        
+    }
+    
+    func deleteNote(note_id:Int) {
+        
+    }
 
 }

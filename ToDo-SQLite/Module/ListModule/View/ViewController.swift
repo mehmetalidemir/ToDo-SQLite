@@ -73,6 +73,7 @@ extension ViewController : PresenterToViewListProtocol {
 
 extension ViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        listPresenterObject?.searchNote(searchWord: searchText)
     }
 }
 
@@ -80,6 +81,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return noteList.count
     }
+    
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! NoteTableViewCell
@@ -91,6 +93,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.noteDescription.text = note.note_description
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let note = noteList[indexPath.row]
+        performSegue(withIdentifier: "toDetail", sender: note)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 

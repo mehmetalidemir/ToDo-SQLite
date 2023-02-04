@@ -16,11 +16,14 @@ protocol ViewToPresenterListProtocol {
     var listView: PresenterToViewListProtocol? { get set }
 
     func uploadNotes()
+    func searchNote(searchWord:String)
+
 }
 
 protocol PresenterToInteractorListProtocol {
     var listPresenter: InteractorToPresenterListProtocol? { get set }
     func uploadNotes()
+    func searchNote(searchWord:String)
 }
 
 //Transporter Protocols
