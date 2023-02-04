@@ -1,6 +1,5 @@
 # Swift Storyboard & SQLite Database To-Do List App with Viper Architecture
 
-# Overview
 This app allows users to create, read, update, and delete to-do items stored in an SQLite database. The app follows the VIPER architecture, with separate modules for the View, Interactor, Presenter, Entity, and Router. The UI is built using Storyboards in Swift.
 
 # Screenshoot
