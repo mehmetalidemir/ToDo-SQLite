@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--To Do App-->
+        <!--To Do List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDo_SQLite" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gmy-hg-cQ3">
+                            <searchBar contentMode="redraw" placeholder="Search Task" translatesAutoresizingMaskIntoConstraints="NO" id="gmy-hg-cQ3">
                                 <rect key="frame" x="0.0" y="155" width="393" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -27,34 +27,34 @@
                                 <rect key="frame" x="0.0" y="211" width="393" height="607"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ych-hi-jw3" customClass="NoteTableViewCell" customModule="ToDo_SQLite" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="48.333332061767578"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="80" id="ych-hi-jw3" customClass="NoteTableViewCell" customModule="ToDo_SQLite" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ych-hi-jw3" id="apK-hg-BkW">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="48.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tvZ-0P-FYm">
-                                                    <rect key="frame" x="140.33333333333334" y="0.0" width="112.66666666666666" height="48.333333333333336"/>
+                                                    <rect key="frame" x="16" y="0.0" width="135.33333333333334" height="80"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Başlığı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjk-0i-Xbk">
-                                                            <rect key="frame" x="0.0" y="0.0" width="112.66666666666667" height="23.333333333333332"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjk-0i-Xbk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="39"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Açıklaması" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xy-q0-pw8">
-                                                            <rect key="frame" x="0.0" y="25.333333333333329" width="112.66666666666667" height="23"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xy-q0-pw8">
+                                                            <rect key="frame" x="0.0" y="41" width="135.33333333333334" height="39"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <color key="textColor" systemColor="systemIndigoColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="tvZ-0P-FYm" firstAttribute="centerX" secondItem="apK-hg-BkW" secondAttribute="centerX" id="3xb-rZ-z5J"/>
                                                 <constraint firstItem="tvZ-0P-FYm" firstAttribute="top" secondItem="apK-hg-BkW" secondAttribute="top" id="6QZ-Zx-j1U"/>
+                                                <constraint firstItem="tvZ-0P-FYm" firstAttribute="leading" secondItem="apK-hg-BkW" secondAttribute="leading" constant="16" id="QHg-0V-9VO"/>
                                                 <constraint firstAttribute="bottom" secondItem="tvZ-0P-FYm" secondAttribute="bottom" id="fpF-aH-LQO"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -78,8 +78,9 @@
                             <constraint firstItem="IbO-JU-Rxa" firstAttribute="top" secondItem="gmy-hg-cQ3" secondAttribute="bottom" id="scZ-JV-Ayh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="To Do App" id="zDh-bB-T5H">
+                    <navigationItem key="navigationItem" title="To Do List" id="zDh-bB-T5H">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cM6-jM-C3Q">
+                            <color key="tintColor" systemColor="systemGreenColor"/>
                             <connections>
                                 <segue destination="Z7d-8X-7Zo" kind="show" id="v8z-0h-Yos"/>
                             </connections>
@@ -95,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
         </scene>
-        <!--Registration View Controller-->
+        <!--Add Note-->
         <scene sceneID="WXh-dy-xNQ">
             <objects>
                 <viewController id="Z7d-8X-7Zo" customClass="RegistrationViewController" customModule="ToDo_SQLite" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,20 +104,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Not Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWi-cs-ZMx">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWi-cs-ZMx">
                                 <rect key="frame" x="8" y="163" width="377" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Not Açıklaması" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0kx-ZB-apb">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0kx-ZB-apb">
                                 <rect key="frame" x="8" y="205" width="377" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdY-YY-hfk">
                                 <rect key="frame" x="166" y="263" width="61" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save">
+                                    <color key="baseForegroundColor" systemColor="systemGray6Color"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="saveButton:" destination="Z7d-8X-7Zo" eventType="touchUpInside" id="eXs-1E-sPl"/>
                                 </connections>
@@ -135,7 +139,7 @@
                             <constraint firstItem="SV8-AV-wih" firstAttribute="trailing" secondItem="0kx-ZB-apb" secondAttribute="trailing" constant="8" id="zdm-Wi-HxA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CTk-qk-mJ8"/>
+                    <navigationItem key="navigationItem" title="Add Note" id="CTk-qk-mJ8"/>
                     <connections>
                         <outlet property="noteDescriptionTextField" destination="0kx-ZB-apb" id="Ckv-tE-Z2P"/>
                         <outlet property="noteTextField" destination="hWi-cs-ZMx" id="4HM-3N-zlc"/>
@@ -145,7 +149,7 @@
             </objects>
             <point key="canvasLocation" x="1782" y="-311"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Edit Note-->
         <scene sceneID="bmV-YP-bqY">
             <objects>
                 <viewController id="96A-Mx-wrr" customClass="DetailViewController" customModule="ToDo_SQLite" customModuleProvider="target" sceneMemberID="viewController">
@@ -153,20 +157,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Not Adı Güncelle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qz5-3k-GMs">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note Name Update" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qz5-3k-GMs">
                                 <rect key="frame" x="8" y="155" width="377" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Not Açıklaması Güncelle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sog-PL-3eU">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note Description Update" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sog-PL-3eU">
                                 <rect key="frame" x="8" y="197" width="377" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kk-hT-ob0">
                                 <rect key="frame" x="156.66666666666666" y="255" width="80" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Update"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Update">
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="updatedButton:" destination="96A-Mx-wrr" eventType="touchUpInside" id="rTW-LN-cno"/>
                                 </connections>
@@ -185,7 +192,7 @@
                             <constraint firstItem="1zS-pj-KDV" firstAttribute="trailing" secondItem="qz5-3k-GMs" secondAttribute="trailing" constant="8" id="wz3-lk-qCM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="47X-Oh-RMw"/>
+                    <navigationItem key="navigationItem" title="Edit Note" id="47X-Oh-RMw"/>
                     <connections>
                         <outlet property="noteDescriptionTextField" destination="sog-PL-3eU" id="T3B-I7-NT3"/>
                         <outlet property="noteTextField" destination="qz5-3k-GMs" id="fre-ra-JIA"/>
@@ -203,6 +210,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8Ki-RT-eZ1">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -216,6 +224,18 @@
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
