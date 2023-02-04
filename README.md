@@ -29,7 +29,7 @@ SQLite is used as the database to store the to-do items. The database is managed
 
 # License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/mehmetalidemir/VideoGamesApp/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/mehmetalidemir/ToDo-SQLite/blob/main/LICENSE.md) for more information.
 
 # Authors
 
