@@ -7,15 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7407A26C298D6E8F0078399F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7407A262298D6E8F0078399F /* FMDatabasePool.m */; };
+		7407A26D298D6E8F0078399F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7407A263298D6E8F0078399F /* FMDatabaseAdditions.m */; };
+		7407A26E298D6E8F0078399F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7407A265298D6E8F0078399F /* FMResultSet.m */; };
+		7407A26F298D6E8F0078399F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7407A268298D6E8F0078399F /* FMDatabaseQueue.m */; };
+		7407A270298D6E8F0078399F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7407A269298D6E8F0078399F /* FMDatabase.m */; };
+		7407A271298E72F00078399F /* todo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7407A25C298D6BE50078399F /* todo.sqlite */; };
 		74177A9F298BB8B1008C181F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177A9E298BB8B1008C181F /* AppDelegate.swift */; };
 		74177AA1298BB8B1008C181F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AA0298BB8B1008C181F /* SceneDelegate.swift */; };
 		74177AA3298BB8B1008C181F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AA2298BB8B1008C181F /* ViewController.swift */; };
 		74177AA6298BB8B1008C181F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74177AA4298BB8B1008C181F /* Main.storyboard */; };
 		74177AA8298BB8B2008C181F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74177AA7298BB8B2008C181F /* Assets.xcassets */; };
 		74177AAB298BB8B2008C181F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74177AA9298BB8B2008C181F /* LaunchScreen.storyboard */; };
+		74177ABA298BCA4A008C181F /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AB9298BCA4A008C181F /* NoteTableViewCell.swift */; };
+		74177ABD298BCDA6008C181F /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177ABC298BCDA6008C181F /* Notes.swift */; };
+		74177AD1298BD23D008C181F /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AD0298BD23D008C181F /* ListInteractor.swift */; };
+		74177AD3298BD250008C181F /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AD2298BD250008C181F /* ListPresenter.swift */; };
+		74177AD5298BD25F008C181F /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AD4298BD25F008C181F /* ListRouter.swift */; };
+		74177AD8298BD27C008C181F /* ListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AD7298BD27C008C181F /* ListProtocols.swift */; };
+		74177ADA298BD2B1008C181F /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AD9298BD2B1008C181F /* DetailInteractor.swift */; };
+		74177ADC298BD2BE008C181F /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177ADB298BD2BE008C181F /* DetailPresenter.swift */; };
+		74177ADE298BD2C8008C181F /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177ADD298BD2C8008C181F /* DetailRouter.swift */; };
+		74177AE0298BD2D3008C181F /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177ADF298BD2D3008C181F /* DetailProtocols.swift */; };
+		74177AE2298BD2EF008C181F /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AE1298BD2EF008C181F /* RegistrationInteractor.swift */; };
+		74177AE4298BD2FA008C181F /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AE3298BD2FA008C181F /* RegistrationPresenter.swift */; };
+		74177AE6298BD307008C181F /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AE5298BD307008C181F /* RegistrationRouter.swift */; };
+		74177AE8298BD313008C181F /* RegistrationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AE7298BD313008C181F /* RegistrationProtocols.swift */; };
+		74177AEA298BD324008C181F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AE9298BD324008C181F /* DetailViewController.swift */; };
+		74177AEC298BD333008C181F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74177AEB298BD333008C181F /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7407A25C298D6BE50078399F /* todo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = todo.sqlite; sourceTree = "<group>"; };
+		7407A25F298D6DF60078399F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7407A260298D6E8E0078399F /* ToDo-SQLite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDo-SQLite-Bridging-Header.h"; sourceTree = "<group>"; };
+		7407A261298D6E8E0078399F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		7407A262298D6E8F0078399F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		7407A263298D6E8F0078399F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		7407A264298D6E8F0078399F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		7407A265298D6E8F0078399F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		7407A266298D6E8F0078399F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		7407A267298D6E8F0078399F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		7407A268298D6E8F0078399F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		7407A269298D6E8F0078399F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		7407A26A298D6E8F0078399F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		7407A26B298D6E8F0078399F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		74177A9B298BB8B1008C181F /* ToDo-SQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-SQLite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74177A9E298BB8B1008C181F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74177AA0298BB8B1008C181F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +60,22 @@
 		74177AA7298BB8B2008C181F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74177AAA298BB8B2008C181F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74177AAC298BB8B2008C181F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74177AB9298BCA4A008C181F /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		74177ABC298BCDA6008C181F /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		74177AD0298BD23D008C181F /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		74177AD2298BD250008C181F /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		74177AD4298BD25F008C181F /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		74177AD7298BD27C008C181F /* ListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProtocols.swift; sourceTree = "<group>"; };
+		74177AD9298BD2B1008C181F /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		74177ADB298BD2BE008C181F /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		74177ADD298BD2C8008C181F /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		74177ADF298BD2D3008C181F /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		74177AE1298BD2EF008C181F /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		74177AE3298BD2FA008C181F /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		74177AE5298BD307008C181F /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		74177AE7298BD313008C181F /* RegistrationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationProtocols.swift; sourceTree = "<group>"; };
+		74177AE9298BD324008C181F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		74177AEB298BD333008C181F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +89,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7407A25E298D6DF60078399F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7407A25F298D6DF60078399F /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74177A92298BB8B1008C181F = {
 			isa = PBXGroup;
 			children = (
 				74177A9D298BB8B1008C181F /* ToDo-SQLite */,
 				74177A9C298BB8B1008C181F /* Products */,
+				7407A25E298D6DF60078399F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +117,236 @@
 		74177A9D298BB8B1008C181F /* ToDo-SQLite */ = {
 			isa = PBXGroup;
 			children = (
+				74177AC6298BCF47008C181F /* App */,
+				74177AC8298BCFE3008C181F /* Module */,
+				74177AC9298BD014008C181F /* Common */,
+				74177AC7298BCF63008C181F /* Resources */,
+				74177AAC298BB8B2008C181F /* Info.plist */,
+				7407A25C298D6BE50078399F /* todo.sqlite */,
+				7407A26A298D6E8F0078399F /* FMDatabase.h */,
+				7407A269298D6E8F0078399F /* FMDatabase.m */,
+				7407A26B298D6E8F0078399F /* FMDatabaseAdditions.h */,
+				7407A263298D6E8F0078399F /* FMDatabaseAdditions.m */,
+				7407A261298D6E8E0078399F /* FMDatabasePool.h */,
+				7407A262298D6E8F0078399F /* FMDatabasePool.m */,
+				7407A266298D6E8F0078399F /* FMDatabaseQueue.h */,
+				7407A268298D6E8F0078399F /* FMDatabaseQueue.m */,
+				7407A267298D6E8F0078399F /* FMDB.h */,
+				7407A264298D6E8F0078399F /* FMResultSet.h */,
+				7407A265298D6E8F0078399F /* FMResultSet.m */,
+				7407A260298D6E8E0078399F /* ToDo-SQLite-Bridging-Header.h */,
+			);
+			path = "ToDo-SQLite";
+			sourceTree = "<group>";
+		};
+		74177AB2298BC866008C181F /* ListModule */ = {
+			isa = PBXGroup;
+			children = (
+				74177AB8298BC995008C181F /* View */,
+				74177AB6298BC980008C181F /* Interactor */,
+				74177AB7298BC98A008C181F /* Presenter */,
+				74177AB5298BC977008C181F /* Router */,
+				74177AB4298BC96B008C181F /* Protocols */,
+			);
+			path = ListModule;
+			sourceTree = "<group>";
+		};
+		74177AB3298BC959008C181F /* TableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				74177AB9298BCA4A008C181F /* NoteTableViewCell.swift */,
+			);
+			path = TableviewCell;
+			sourceTree = "<group>";
+		};
+		74177AB4298BC96B008C181F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				74177AD7298BD27C008C181F /* ListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		74177AB5298BC977008C181F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				74177AD4298BD25F008C181F /* ListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		74177AB6298BC980008C181F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				74177AD0298BD23D008C181F /* ListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		74177AB7298BC98A008C181F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				74177AD2298BD250008C181F /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		74177AB8298BC995008C181F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74177AA2298BB8B1008C181F /* ViewController.swift */,
+				74177AB3298BC959008C181F /* TableviewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74177ABB298BCD92008C181F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				74177ABC298BCDA6008C181F /* Notes.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		74177ABF298BCE43008C181F /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				74177AC0298BCE81008C181F /* View */,
+				74177AC1298BCE94008C181F /* Interactor */,
+				74177AC2298BCEA6008C181F /* Presenter */,
+				74177AC3298BCEAF008C181F /* Router */,
+				74177AC4298BCEC0008C181F /* Protocols */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		74177AC0298BCE81008C181F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74177AE9298BD324008C181F /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74177AC1298BCE94008C181F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				74177AD9298BD2B1008C181F /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		74177AC2298BCEA6008C181F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				74177ADB298BD2BE008C181F /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		74177AC3298BCEAF008C181F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				74177ADD298BD2C8008C181F /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		74177AC4298BCEC0008C181F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				74177ADF298BD2D3008C181F /* DetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		74177AC6298BCF47008C181F /* App */ = {
+			isa = PBXGroup;
+			children = (
 				74177A9E298BB8B1008C181F /* AppDelegate.swift */,
 				74177AA0298BB8B1008C181F /* SceneDelegate.swift */,
-				74177AA2298BB8B1008C181F /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		74177AC7298BCF63008C181F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				74177AA4298BB8B1008C181F /* Main.storyboard */,
 				74177AA7298BB8B2008C181F /* Assets.xcassets */,
 				74177AA9298BB8B2008C181F /* LaunchScreen.storyboard */,
-				74177AAC298BB8B2008C181F /* Info.plist */,
 			);
-			path = "ToDo-SQLite";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74177AC8298BCFE3008C181F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				74177AB2298BC866008C181F /* ListModule */,
+				74177ABF298BCE43008C181F /* DetailModule */,
+				74177ACA298BD0DB008C181F /* RegistrationModule */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		74177AC9298BD014008C181F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				74177ABB298BCD92008C181F /* Entity */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		74177ACA298BD0DB008C181F /* RegistrationModule */ = {
+			isa = PBXGroup;
+			children = (
+				74177ACF298BD1DC008C181F /* View */,
+				74177ACE298BD1D3008C181F /* Interactor */,
+				74177ACD298BD1CD008C181F /* Presenter */,
+				74177ACC298BD1C8008C181F /* Router */,
+				74177ACB298BD1A2008C181F /* Protocols */,
+			);
+			path = RegistrationModule;
+			sourceTree = "<group>";
+		};
+		74177ACB298BD1A2008C181F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				74177AE7298BD313008C181F /* RegistrationProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		74177ACC298BD1C8008C181F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				74177AE5298BD307008C181F /* RegistrationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		74177ACD298BD1CD008C181F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				74177AE3298BD2FA008C181F /* RegistrationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		74177ACE298BD1D3008C181F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				74177AE1298BD2EF008C181F /* RegistrationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		74177ACF298BD1DC008C181F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74177AEB298BD333008C181F /* RegistrationViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +381,7 @@
 				TargetAttributes = {
 					74177A9A298BB8B1008C181F = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -126,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74177AAB298BB8B2008C181F /* LaunchScreen.storyboard in Resources */,
+				7407A271298E72F00078399F /* todo.sqlite in Resources */,
 				74177AA8298BB8B2008C181F /* Assets.xcassets in Resources */,
 				74177AA6298BB8B1008C181F /* Main.storyboard in Resources */,
 			);
@@ -138,9 +422,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74177AE8298BD313008C181F /* RegistrationProtocols.swift in Sources */,
+				74177AD5298BD25F008C181F /* ListRouter.swift in Sources */,
+				74177AEC298BD333008C181F /* RegistrationViewController.swift in Sources */,
+				74177AE4298BD2FA008C181F /* RegistrationPresenter.swift in Sources */,
+				74177ADA298BD2B1008C181F /* DetailInteractor.swift in Sources */,
+				7407A26D298D6E8F0078399F /* FMDatabaseAdditions.m in Sources */,
+				74177AD3298BD250008C181F /* ListPresenter.swift in Sources */,
+				74177AD1298BD23D008C181F /* ListInteractor.swift in Sources */,
+				7407A26E298D6E8F0078399F /* FMResultSet.m in Sources */,
+				74177ADC298BD2BE008C181F /* DetailPresenter.swift in Sources */,
 				74177AA3298BB8B1008C181F /* ViewController.swift in Sources */,
+				74177AE0298BD2D3008C181F /* DetailProtocols.swift in Sources */,
+				7407A26F298D6E8F0078399F /* FMDatabaseQueue.m in Sources */,
+				74177AEA298BD324008C181F /* DetailViewController.swift in Sources */,
+				74177ABD298BCDA6008C181F /* Notes.swift in Sources */,
+				7407A270298D6E8F0078399F /* FMDatabase.m in Sources */,
 				74177A9F298BB8B1008C181F /* AppDelegate.swift in Sources */,
 				74177AA1298BB8B1008C181F /* SceneDelegate.swift in Sources */,
+				74177ADE298BD2C8008C181F /* DetailRouter.swift in Sources */,
+				74177AE2298BD2EF008C181F /* RegistrationInteractor.swift in Sources */,
+				74177ABA298BCA4A008C181F /* NoteTableViewCell.swift in Sources */,
+				7407A26C298D6E8F0078399F /* FMDatabasePool.m in Sources */,
+				74177AD8298BD27C008C181F /* ListProtocols.swift in Sources */,
+				74177AE6298BD307008C181F /* RegistrationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3CY5GSUS4Z;
@@ -303,6 +609,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdemir.ToDo-SQLite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDo-SQLite/ToDo-SQLite-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +621,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3CY5GSUS4Z;
@@ -331,6 +640,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wdemir.ToDo-SQLite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDo-SQLite/ToDo-SQLite-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
