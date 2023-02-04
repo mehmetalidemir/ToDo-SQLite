@@ -100,6 +100,26 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         performSegue(withIdentifier: "toDetail", sender: note)
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete"){ (contextualAction,view,bool) in
+            let note = self.noteList[indexPath.row]
+            
+            let alert = UIAlertController(title: "Delete Note", message: "\(note.note_name!) is delete?", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            alert.addAction(cancelAction)
+            
+            let trueAction = UIAlertAction(title: "Yes", style: .destructive){ action in
+                self.listPresenterObject?.deleteNote(note_id: note.note_id!)
+            }
+            alert.addAction(trueAction)
+            
+            self.present(alert, animated: true)
+        }
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
 
 
 }

@@ -16,24 +16,26 @@ protocol ViewToPresenterListProtocol {
     var listView: PresenterToViewListProtocol? { get set }
 
     func uploadNotes()
-    func searchNote(searchWord:String)
+    func searchNote(searchWord: String)
+    func deleteNote(note_id: Int)
 
 }
 
 protocol PresenterToInteractorListProtocol {
     var listPresenter: InteractorToPresenterListProtocol? { get set }
     func uploadNotes()
-    func searchNote(searchWord:String)
+    func searchNote(searchWord: String)
+    func deleteNote(note_id: Int)
 }
 
 //Transporter Protocols
 protocol InteractorToPresenterListProtocol {
-    func sendDataToPresenter(noteList:[Notes])
+    func sendDataToPresenter(noteList: [Notes])
 
 }
 
 protocol PresenterToViewListProtocol {
-    func sendDataToView(noteList:[Notes])
+    func sendDataToView(noteList: [Notes])
 }
 
 //Router Protocol

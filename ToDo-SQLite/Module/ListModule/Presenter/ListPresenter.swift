@@ -17,6 +17,10 @@ class ListPresenter: ViewToPresenterListProtocol {
     func searchNote(searchWord: String) {
         listInteractor?.searchNote(searchWord:searchWord)
     }
+    
+    func `deleteNote`(note_id: Int) {
+        listInteractor?.deleteNote(note_id: note_id)
+    }
 }
 
 extension ListPresenter: InteractorToPresenterListProtocol {

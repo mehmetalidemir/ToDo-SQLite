@@ -70,7 +70,16 @@ class ListInteractor: PresenterToInteractorListProtocol {
     }
     
     func deleteNote(note_id:Int) {
-        
+        db?.open()
+
+        do {
+            try db!.executeUpdate("DELETE FROM notes WHERE note_id = ?", values: [note_id])
+            uploadNotes()
+        } catch {
+            print(error.localizedDescription)
+        }
+
+        db?.close()
     }
 
 }
