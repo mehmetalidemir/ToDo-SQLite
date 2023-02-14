@@ -26,10 +26,6 @@ Router: Handles navigation between screens.
 # Database
 SQLite is used as the database to store the to-do items. The database is managed using the SQLite.swift library.
 
-# License
-
-Distributed under the MIT License. See [LICENSE](https://github.com/mehmetalidemir/ToDo-SQLite/blob/main/LICENSE.md) for more information.
-
 # Authors
 
-* **Mehmet Ali Demir** - *iOS Developer* - [Mehmet Ali Demir](https://github.com/mehmetalidemir) - **
+* **Mehmet Ali Demir** - *iOS Developer* - [Mehmet Ali Demir](https://github.com/mehmetalidemir)
